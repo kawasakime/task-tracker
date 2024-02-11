@@ -22,11 +22,11 @@ export const tasksSlice = createSlice({
       state.items.push(payload);
     },
     removeTask: (state, {payload}: RemoveTaskPayload) => {
-      state.items = state.items.filter((_, index) => index !== payload);
+      state.items = state.items.filter(task => task.id !== payload);
     },
     editTask: (state, {payload}: EditTaskPayload) => {
-      state.items = state.items.map((task, index) =>
-        index === payload.index ? payload.item : task,
+      state.items = state.items.map(task =>
+        task.id === payload.id ? payload : task,
       );
     },
   },
