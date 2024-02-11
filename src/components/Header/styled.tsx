@@ -4,8 +4,9 @@ import {colors} from '../../constants/variables';
 export const HeaderContainer = styled.View`
   justify-content: center;
   align-items: center;
-  padding: 10px 0;
+  padding: 15px 0;
   position: relative;
+  margin-bottom: 15px;
 `;
 
 export const HeaderTitle = styled.Text`
@@ -16,7 +17,7 @@ export const HeaderTitle = styled.Text`
 
 export const GoBackBtnContainer = styled.Pressable`
   position: absolute;
-  padding: 10px;
-  left: 0;
+  padding: 15px;
+  left: -20px;
   top: 0;
 `;
