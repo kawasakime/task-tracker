@@ -9,3 +9,5 @@ export const formatDateToNormal = (date: string) => {
 export const formatDateToTime = (date: string) => {
   return moment(new Date(date)).format('HH:mm').replace('Invalid date', '');
 };
+
+export const deadlineIsMissed = (date: string) => new Date() > new Date(date);
