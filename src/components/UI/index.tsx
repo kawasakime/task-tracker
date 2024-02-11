@@ -18,6 +18,7 @@ export const StyledButton = styled.Pressable`
   justify-content: center;
   align-items: center;
   border-radius: ${radius.small};
+  overflow: hidden;
 `;
 
 export const StyledText = styled.Text`
@@ -27,6 +28,7 @@ export const StyledText = styled.Text`
 
 export const StyledInput = styled.TextInput`
   border-radius: ${radius.small};
+  overflow: hidden;
   border: 1px solid ${colors.black}40;
   padding: 10px 15px;
 `;

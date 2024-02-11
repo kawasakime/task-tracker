@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.cardBackground,
     marginRight: 10,
     borderRadius: 17,
+    overflow: 'hidden',
     paddingHorizontal: 15,
   },
   buttonText: {color: colors.black},
