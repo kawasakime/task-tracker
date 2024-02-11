@@ -5,12 +5,9 @@ export interface AddTaskPayload {
 }
 
 export interface RemoveTaskPayload {
-  payload: number;
+  payload: string;
 }
 
 export interface EditTaskPayload {
-  payload: {
-    index: number;
-    item: Task;
-  };
+  payload: Task;
 }
