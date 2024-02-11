@@ -1,6 +1,7 @@
 import {TextInputProps} from 'react-native';
 
 export interface Task {
+  id: string;
   title: string;
   description: string;
   date: string;
