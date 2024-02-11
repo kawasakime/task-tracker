@@ -102,7 +102,8 @@ const TaskForm = ({route}: TaskFormProps) => {
               showSoftInputOnFocus={false}
               onFocus={dateInputFocusHandler}
               value={formatDateToNormal(task.date)}
-              placeholder="Введите дату задачи"
+              placeholder="Выберите дату задачи"
+              caretHidden={true}
             />
           </FormBlock>
           <FormBlock>
@@ -111,7 +112,8 @@ const TaskForm = ({route}: TaskFormProps) => {
               showSoftInputOnFocus={false}
               onFocus={timeInputFocusHandler}
               value={formatDateToTime(task.date)}
-              placeholder="Введите время задачи"
+              placeholder="Выберите время задачи"
+              caretHidden={true}
             />
           </FormBlock>
         </View>

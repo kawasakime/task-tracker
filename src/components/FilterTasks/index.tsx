@@ -34,7 +34,7 @@ const FilterTasks = ({
       <Input
         value={searchValue}
         onChangeText={textChangeHandler}
-        placeholder="Поиск..."
+        placeholder="Поиск по названию..."
       />
       <ScrollView style={styles.filterBtnsContainer} horizontal>
         {filters.map(item => (

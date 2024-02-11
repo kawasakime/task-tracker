@@ -24,7 +24,9 @@ const Home = () => {
 
   const filteredItems = useMemo(() => {
     return items
-      .filter(item => item.title.includes(search))
+      .filter(item =>
+        item.title.toLocaleLowerCase().includes(search.toLocaleLowerCase()),
+      )
       .filter(item => changeFilter(item, activeFilter));
   }, [search, activeFilter, items]);
 
